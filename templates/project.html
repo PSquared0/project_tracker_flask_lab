@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <label> PROJECT DESCRIPTION </label>
+    <table> 
+        <tr>
+            <th> Title </th>
+            <th> Description </th>
+            <th> Maxium Grade </th>
+        </tr>
+        <tr> {% for row in rows %} 
+            <td> {{ row[0] }} </td>
+            <td> {{ row[1] }} </td>
+            <td> {{ row[2] }} </td>
+              {% endfor %}
+        </tr>
+    </table>
+</body>
+</html>
